@@ -8,7 +8,7 @@ const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image) // highlight-line
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
-      <p>{data.mdx.frontmatter.date}</p>
+      <p>투입일 : {data.mdx.frontmatter.date}</p>
       {/* highlight-start */}
       <GatsbyImage
         image={image}

@@ -13,7 +13,7 @@ const BlogPage = ({ data }) => {
                 {node.frontmatter.title}
               </Link>
             </h2>
-            <p>Posted: {node.frontmatter.date}</p>
+            <p>투입일: {node.frontmatter.date}</p>
           </article>
         ))
       }

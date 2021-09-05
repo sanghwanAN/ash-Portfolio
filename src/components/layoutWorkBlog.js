@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import "@fontsource/noto-sans-kr"; 
 import "../style/sanghwanpf.scss"
-const Layout = ({ pageTitle, children }) => {
+const LayoutWorkBlog = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
   query {
     site {
@@ -17,7 +17,7 @@ const Layout = ({ pageTitle, children }) => {
       
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
       {/* <header className="site-title">{data.site.siteMetadata.title}</header> */}
-      <nav>
+      {/* <nav>
         <ul className="nav-links">
           <li className="nav-link-item">
             <Link to="/" className="nav-link-text">
@@ -35,12 +35,12 @@ const Layout = ({ pageTitle, children }) => {
             </Link>
           </li>
         </ul>
-      </nav>
-      <main>
+      </nav> */}
+      <main className="blog-main">
         <h1 className="heading">{pageTitle}</h1>
         {children}
       </main>
     </div>
   )
 }
-export default Layout
+export default LayoutWorkBlog

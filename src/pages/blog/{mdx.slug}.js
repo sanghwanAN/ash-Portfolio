@@ -2,31 +2,30 @@ import * as React from 'react'
 import { graphql } from 'gatsby' // highlight-line
 import { MDXRenderer } from 'gatsby-plugin-mdx' // highlight-line
 import { GatsbyImage, getImage } from 'gatsby-plugin-image' // highlight-line
-import Layout from '../../components/layout'
+import LayoutWorkBlog from '../../components/layoutWorkBlog'
 
 const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image) // highlight-line
   return (
-    <Layout pageTitle={data.mdx.frontmatter.title}>
-      <p>투입일 : {data.mdx.frontmatter.date}</p>
-      {/* highlight-start */}
+    <LayoutWorkBlog pageTitle={data.mdx.frontmatter.title}>
+      
+      
       <GatsbyImage
         image={image}
         alt={data.mdx.frontmatter.hero_image_alt}
       />
-      {/* highlight-end */}
-      {/* highlight-start */}
+     
       <p>
         Photo Credit:{" "}
         <a href={data.mdx.frontmatter.hero_image_credit_link}>
           {data.mdx.frontmatter.hero_image_credit_text}
         </a>
       </p>
-      {/* highlight-end */}
+      <p>투입일 : {data.mdx.frontmatter.date}</p>
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>
-    </Layout>
+    </LayoutWorkBlog>
   )
 }
 

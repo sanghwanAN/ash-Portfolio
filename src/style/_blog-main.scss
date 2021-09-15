@@ -1,5 +1,4 @@
 .blog-main {
-  
   h2 {
     padding: 0 1rem;
   }
@@ -9,9 +8,19 @@
   > ul,
   > ol { 
     margin-right: 1em;
+    >li {
+      word-break: keep-all;
+    }
     ul,
     ol {
-      padding: 0 20px 0 20px;
+      >li {
+        &:not(first-child){
+          margin-top: 0.625rem;
+        }
+        margin-top: 0.625rem;
+      }
+      margin-left: -1.25rem;
+      padding: 0 0 0 1.25rem;
     }
   }
   ul,
@@ -19,6 +28,11 @@
     em {
       color : #e31223;
       font-style: normal;
+    }
+  }
+  li {
+    blockquote {
+      margin-top: 10px;
     }
   }
 }

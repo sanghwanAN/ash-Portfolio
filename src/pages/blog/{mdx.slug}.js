@@ -16,7 +16,7 @@ const BlogPost = ({ data }) => {
       />
      
       <p>
-        Photo Credit:{" "}
+        프로젝트 보기:{" "}
         <a href={data.mdx.frontmatter.hero_image_credit_link}>
           {data.mdx.frontmatter.hero_image_credit_text}
         </a>

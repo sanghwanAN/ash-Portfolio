@@ -5,8 +5,11 @@
   > p {
     padding: 0 1rem;
   }
+  em {
+    color : #e31223;}
   > ul,
   > ol { 
+    margin-left: 1rem;
     margin-right: 1em;
     >li {
       word-break: keep-all;
@@ -26,13 +29,17 @@
   ul,
   ol {
     em {
-      color : #e31223;
       font-style: normal;
     }
   }
   li {
     blockquote {
+      em {
+        color : #1250e3;
+      }
       margin-top: 10px;
     }
   }
+
+  
 }

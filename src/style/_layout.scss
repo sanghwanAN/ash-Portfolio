@@ -17,13 +17,15 @@ header {
   }
   .header-left ,
   .header-right {
+     height: 2rem;
     a {
       display: inline-block;
       position: relative;
       font-size: 22px;
-      span {
-        font-size: 12px;
-        vertical-align: bottom;
+      height: 100%;
+      svg {
+        width: 2rem;
+        height: 100%;
       }
     }
   } 
@@ -33,6 +35,13 @@ header {
   }
   .header-right {
     margin-left: auto;
+  }
+  .ico-home {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background: url(../images/bg_home.jpg) no-repeat 50% 50% / cover;
   }
 }
 header + .container {

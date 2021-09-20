@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import {Link, useStaticQuery, graphql } from 'gatsby'
 import "@fontsource/noto-sans-kr"; 
 import "../style/sanghwanpf.scss"
 const LayoutWorkBlog = ({ pageTitle, children }) => {
@@ -13,7 +13,23 @@ const LayoutWorkBlog = ({ pageTitle, children }) => {
   }
 `)
   return (
-    <div className="container">
+    <>
+      <header>
+        <div className="header-inner">
+          <div className="header-left">
+            <Link to="/blog" className="nav-link-text">
+              ⬅️ 
+              <span>(뒤로)</span>
+            </Link>
+          </div>
+          <div className="header-right">
+            <Link to="/" className="nav-link-text">
+            🏠<span>(home)</span> 
+            </Link>
+          </div>
+        </div>
+      </header>
+      <div className="container">
       
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
       {/* <header className="site-title">{data.site.siteMetadata.title}</header> */}
@@ -37,10 +53,11 @@ const LayoutWorkBlog = ({ pageTitle, children }) => {
         </ul>
       </nav> */}
       <main className="blog-main">
-        <h1 className="heading">{pageTitle}</h1>
+        {/* <h1 className="heading">{pageTitle}</h1> */}
         {children}
       </main>
     </div>
+    </>
   )
 }
 export default LayoutWorkBlog

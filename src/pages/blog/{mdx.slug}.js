@@ -9,19 +9,23 @@ const BlogPost = ({ data }) => {
   return (
     <LayoutWorkBlog pageTitle={data.mdx.frontmatter.title}>
       
-      
-      <GatsbyImage
-        image={image}
-        alt={data.mdx.frontmatter.hero_image_alt}
-      />
+      <div className="blog-main__header">
+        
+        <GatsbyImage
+          image={image}
+          alt={data.mdx.frontmatter.hero_image_alt}
+        />
+        <h1>{data.mdx.frontmatter.title}</h1>
+      </div>
      
-      <p>
-        프로젝트 보기:{" "}
+      {/* <p>
+        프로젝트 링크:{" "}
         <a href={data.mdx.frontmatter.hero_image_credit_link}>
           {data.mdx.frontmatter.hero_image_credit_text}
         </a>
       </p>
-      <p>투입일 : {data.mdx.frontmatter.date}</p>
+      <p>투입일 : {data.mdx.frontmatter.date}</p> */}
+
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>

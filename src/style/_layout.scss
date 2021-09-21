@@ -1,22 +1,21 @@
-html, body {
-  overscroll-behavior-y: none;
-}
 $header-height: 56px;
 header {
-  height: $header-height;
   position: fixed;
-  top: 0;
-  left: 0;
+  // top: 0;
+  // left: 0;
+  // height: $header-height;
   z-index: 100;
-  background: #ffffff;
+  // background: #ffffff;
   width: 100%;
   border-bottom: 4px solid #f6fafd;
   .header-inner {
+    position: relative;
+    // height:$header-height;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    height:100%;
-    padding: 0 12px;
+    background: #ffffff;
   }
   .header-left ,
   .header-right {
@@ -47,10 +46,11 @@ header {
     background: url(../images/bg_home.jpg) no-repeat 50% 50% / cover;
   }
 }
-header + .container {
-  padding-top: $header-height;
-}
+// header + .container {
+//   padding-top: $header-height;
+// }
 .container {
+  padding-top: inherit;
   margin: auto;
   max-width: 500px;
 }

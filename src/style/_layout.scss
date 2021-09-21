@@ -1,10 +1,7 @@
-html,
-body,
-#___gatsby,
-#___gatsby >div:first-child {
-  overscroll-behavior: contain;
-}
 $header-height: 56px;
+html {
+  scroll-padding-top: $header-height;
+}
 header {
   height: $header-height;
   position: fixed;

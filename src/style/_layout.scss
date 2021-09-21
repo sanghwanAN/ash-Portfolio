@@ -1,6 +1,6 @@
 $header-height: 56px;
-html {
-  scroll-padding-top: $header-height;
+body {
+  padding-top:56px;
 }
 header {
   height: $header-height;
@@ -46,9 +46,6 @@ header {
     border-radius: 100%;
     background: url(../images/bg_home.jpg) no-repeat 50% 50% / cover;
   }
-}
-header + .container {
-  padding-top: $header-height;
 }
 .container {
   margin: auto;

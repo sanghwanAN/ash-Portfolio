@@ -1,17 +1,8 @@
-body {
- #___gatsby {
-   >div:first-child {
-     overflow: hidden;
-     position: relative;
-   }
- }
-}
 $header-height: 56px;
 header {
-  position: fixed;
-  transform: translate(0,0);
-  width:100%;
   height: $header-height;
+  position: fixed;
+  top: 0;
   left: 0;
   z-index: 100;
   background: #ffffff;
@@ -54,9 +45,7 @@ header {
   }
 }
 header + .container {
-  position: relative;
-  overflow: hidden;
-  transform: translate(0,0);
+  padding-top: $header-height;
 }
 .container {
   margin: auto;

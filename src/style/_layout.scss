@@ -1,9 +1,7 @@
-html {
-  overscroll-behavior: none;
-}
+html,
+body,
 #___gatsby >div:first-child {
-  overflow: auto;
-  overscroll-behavior-y: contain;
+  overscroll-behavior: none;
 }
 $header-height: 56px;
 header {

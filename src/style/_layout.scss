@@ -1,7 +1,25 @@
 $header-height: 56px;
-body {
-  padding-top:56px;
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+#___gatsby {
+  height: 100%;
+  overflow: auto;
+}
+
+
 header {
   height: $header-height;
   position: fixed;
@@ -46,6 +64,9 @@ header {
     border-radius: 100%;
     background: url(../images/bg_home.jpg) no-repeat 50% 50% / cover;
   }
+}
+header + .container {
+  padding-top: $header-height;
 }
 .container {
   margin: auto;

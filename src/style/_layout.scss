@@ -45,7 +45,9 @@ header {
   }
 }
 header + .container {
-  // padding-top: $header-height;
+  position: relative;
+  overflow: hidden;
+  margin-top: $header-height;
 }
 .container {
   margin: auto;

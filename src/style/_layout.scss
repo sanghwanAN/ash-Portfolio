@@ -1,6 +1,10 @@
 html {
   overscroll-behavior: none;
 }
+#___gatsby >div:first-child {
+  overflow: auto;
+  overscroll-behavior-y: contain;
+}
 $header-height: 56px;
 header {
   height: $header-height;

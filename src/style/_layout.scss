@@ -2,7 +2,7 @@ html,
 body,
 #___gatsby,
 #___gatsby >div:first-child {
-  overscroll-behavior: none;
+  overscroll-behavior: contain;
 }
 $header-height: 56px;
 header {

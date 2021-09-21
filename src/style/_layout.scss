@@ -8,9 +8,10 @@ body {
 }
 $header-height: 56px;
 header {
-  height: $header-height;
-  position:  sticky;
+  position: fixed;
   top: 0;
+  width:100%;
+  height: $header-height;
   left: 0;
   z-index: 100;
   background: #ffffff;

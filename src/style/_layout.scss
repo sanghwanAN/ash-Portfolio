@@ -1,26 +1,4 @@
-
 $header-height: 56px;
-html {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-body {
-  width: 100%;
-  margin: 0;
-  font-family: sans-serif;
-  height: 100%;
-  overflow: hidden;
-}
-
-#___gatsby {
-  height: 100%;
-  overflow: auto;
-}
-
-
 header {
   height: $header-height;
   position: fixed;

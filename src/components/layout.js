@@ -22,25 +22,27 @@ const Layout = ({ pageClassName, pageTitle, children }) => {
     <>
     <header>
       <div className="header-inner">
-        <nav>
-          <ul className="nav-links">
-            <li className="nav-link-item">
-              <Link to="/" className="nav-link-text">
-                Home
-              </Link>
-            </li>
-            <li className="nav-link-item">
-              <Link to="/about" className="nav-link-text">
-                About
-              </Link>
-            </li>
-            <li className="nav-link-item">
-              <Link to="/blog" className="nav-link-text">
-                Works Blog
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <div className="header-left">
+          <Link to="/" className="nav-link-text">
+            <i className="ico-home"></i>
+          </Link>
+        </div>
+        <div className="header-right">
+          <nav className="header-nav">
+            <ul className="header-nav__ul">
+              <li className="header-nav__item">
+                <Link to="/about" className="nav-link-text">
+                  About
+                </Link>
+              </li>
+              <li className="header-nav__item">
+                <Link to="/blog" className="nav-link-text">
+                  WorksBlog
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <div className={`container ${pageClassName}`}>

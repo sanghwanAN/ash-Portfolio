@@ -1,6 +1,11 @@
 import * as React from 'react'
 import {Link, useStaticQuery, graphql } from 'gatsby'
 import "@fontsource/noto-sans-kr"; 
+import "@fontsource/noto-sans-kr"; 
+import "@fontsource/noto-sans-kr/300.css"; 
+import "@fontsource/noto-sans-kr/500.css"; 
+import "@fontsource/noto-sans-kr/700.css"; 
+import "@fontsource/noto-sans-kr/900.css"; 
 import "../style/sanghwanpf.scss"
 const LayoutWorkBlog = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`

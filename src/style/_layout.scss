@@ -37,6 +37,9 @@ header {
   .header-left ,
   .header-right {
      height: 2rem;
+  } 
+  .header-left {
+    margin-right: auto;
     a {
       display: inline-block;
       position: relative;
@@ -47,13 +50,12 @@ header {
         height: 100%;
       }
     }
-  } 
-  .header-left {
-    margin-right: auto;
-   
   }
   .header-right {
     margin-left: auto;
+    a {
+      font-size: 1.25rem;
+    }
   }
   .ico-home {
     display: inline-block;
@@ -63,29 +65,32 @@ header {
     background: url(../images/bg_home.jpg) no-repeat 50% 50% / cover;
   }
 }
+
+.header-nav {
+  .header-nav__ul {
+    text-align: right;
+  }
+  .header-nav__item:not(:first-child) {
+    margin-left: 20px;;
+  }
+  .header-nav__item {
+    display: inline-block;
+    color:#2d0554;
+    a {
+      color: inherit;
+      font-size: 1.2rem;
+      letter-spacing: -1px;
+      font-weight: 700;
+    }
+  }
+}
+
 header + .container {
   padding-top: $header-height;
 }
 .container {
   margin: auto;
-  max-width: 500px;
-}
-
-.heading {
-  color: #000;
-  font-weight: 300;
-  font-size: 1rem;
-}
-.nav-links {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-}
-.nav-link-item {
-  padding-right: 2rem;
-}
-.nav-link-text {
-  color: black;
+  max-width: 720px;
 }
 
 .site-title {

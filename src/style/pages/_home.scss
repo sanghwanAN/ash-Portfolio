@@ -1,0 +1,32 @@
+.container--home {
+  text-align: center;
+  .container__tit {
+    padding:2rem 2rem 0;
+    margin-bottom: 1.5rem;
+    font-size: 2.625rem;
+    font-weight: 900;
+    word-break: keep-all;
+    letter-spacing: -1px;
+  }
+
+  .container__tit::first-line {
+    color: #fb7270;
+    font-size: 2rem;
+  }
+  .home-ment {
+    padding: 2rem 2.2rem;
+    font-size: 1.125rem;
+    font-weight: 100;
+    color: #000;
+    word-break: keep-all;
+  }
+  .home-me {
+    position: relative; 
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 100%;
+    width: 52%;
+    max-width: 230px;
+    box-shadow: 0 7px 6px rgba(0,0,0,0.16);
+  }
+}

@@ -50,7 +50,14 @@ const Layout = ({ pageClassName, pageTitle, children }) => {
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
       {/* <header className="site-title">{data.site.siteMetadata.title}</header> */}
       <main className="container__main">
-        <h2 className="container__tit">{pageTitle}</h2>
+        <h2 className="container__tit">
+          {pageTitle.split("\n").map((txt) => (
+            <>
+              {txt}
+              <br />
+            </>
+          ))}
+        </h2>
         {children}
       </main>
     </div>

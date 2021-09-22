@@ -9,8 +9,7 @@ const BlogPost = ({ data }) => {
   return (
     <LayoutWorkBlog pageTitle={data.mdx.frontmatter.title}>
       
-      <div className="blog-main__header">
-        
+      <div className="blog-main__header">        
         <GatsbyImage
           image={image}
           alt={data.mdx.frontmatter.hero_image_alt}

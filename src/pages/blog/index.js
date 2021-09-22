@@ -5,6 +5,10 @@ import Layout from '../../components/layout'
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="2020.12 이후에 참여한 프로젝트 리스트" pageClassName="container--works-blog">
+      <div className="add-notice">
+        <p>2020 이전 프로젝트는 아래의 링크 클릭 </p>
+        <a href="https://sanghwanan.github.io/" target="_blank" rel="noopener noreferrer"> https://sanghwanan.github.io/</a>
+      </div>
       <div className="blog-article-wrap">
       {
         data.allMdx.nodes.map(node => (

@@ -27,6 +27,14 @@
     overflow: hidden;
     max-width: 230px;
     border-radius: 100%;
+    overflow: hidden;
+    background: url(../images/home_me.jpg) 50% 50% / cover;
+    box-shadow: 0 7px 6px rgba(0,0,0,0.16);
+    &:after {
+      content: '';
+      display: block;
+      padding-bottom: 100%;
+    }
     .gatsby-image-wrapper{
       position: relative;
       width: 100%;

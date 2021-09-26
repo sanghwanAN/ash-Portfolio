@@ -23,9 +23,6 @@ const AboutPage = () => {
         저는 <em>반응형 웹</em>의 <em>자신</em>이 있으며, <em>Scss</em>, <em>Git</em>, <em>Reac.js</em>에서 마크업, <em>웹 접근성</em>, <em>크로스 브라우징</em>이 <em>가능</em> 합니다. 
       </section>
       <section className="about-sec">
-      
-      </section>
-      <section className="about-sec">
         <h3 className="about-sec__tit">프리랜서에서 정규직으로 희망하는 이유</h3>
         <em>다양한 환경</em> 에서, <em>다양한 사람</em>들과 일을 해 왔습니다.<br/>
         지금 까지의 경험을 토대로  <em>안정</em>적인 곳에서 고정적인 <em>동료</em>들과 <em>프로젝트에 대해서 함께 고민하고 집중</em>할 수 있으려면 회사에 <em>정규직 입사</em>를 해야 된다고 <em>판단</em>이 되어 이렇게 정규직 입사를 희망 하고 있습니다.

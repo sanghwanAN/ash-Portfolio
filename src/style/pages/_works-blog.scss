@@ -20,6 +20,13 @@
 .blog-article-wrap {
   background: #efefef;
   padding: 0.25rem 0;
+  @media (min-width: $breakpoint-md) {
+    background: #fff;
+    padding:0;
+    .blog-article {
+      background: #fff;
+    }
+  }
 }
 .blog-article {
   background: #efefef;
@@ -104,21 +111,28 @@
     position: relative;
     padding-top: 42%;
     overflow: hidden;
-   >div {
-    max-width: none!important;
-    position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-   }
-   picture {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-   }
+    >div {
+      max-width: none!important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    picture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    @media (min-width: $breakpoint-md) {
+      padding-top: 200px;
+      margin-bottom: 40px;
+       img {
+        object-fit: contain;
+      }
+    }
   }
 }
 .blog-main__header {

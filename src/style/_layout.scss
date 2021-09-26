@@ -32,6 +32,8 @@ header {
     flex-wrap: wrap;
     align-items: center;
     height:100%;
+    max-width: 720px;
+    margin: 0 auto;
     padding: 0 12px;
   }
   .header-left ,
@@ -91,6 +93,9 @@ header + .container {
 .container {
   margin: auto;
   max-width: 720px;
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.25rem;
+  }
 }
 .container__tit {
   font-size: 2rem;

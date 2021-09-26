@@ -11,11 +11,11 @@
   .me-profile__img {
     display: inline-block;
     position: relative;
-    width: 40%;
     max-width: 180px;
     border-radius: 100%;
     overflow: hidden;
     background: url(../images/bg_picture_me.jpg) 50% 50% / cover;
+    flex: 0 0 40%;
     &:after {
       content: '';
       display: block;
@@ -23,6 +23,7 @@
     }
   }
   .me-profile__right {
+    flex: 1 0 60%;
     padding-left: 0.875rem;
     color:#663399;
     font-size: 0.9375rem;
@@ -60,6 +61,7 @@
     }
   }
   .about-sec__tit {
+    margin-bottom: 2rem;
     font-size: 1.875rem;
     font-weight: 700;
     letter-spacing: -1px;

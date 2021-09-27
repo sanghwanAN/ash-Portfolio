@@ -140,6 +140,9 @@ ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  >li:not(:first-child) {
+    margin-top: 0.5rem;
+  }
 }
 
 ol ol,

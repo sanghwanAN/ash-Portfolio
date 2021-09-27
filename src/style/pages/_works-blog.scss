@@ -78,6 +78,9 @@
     margin-right: 1em;
     >li {
       word-break: keep-all;
+      &:not(first-child){
+        margin-top: 1rem;
+      }
     }
     ul,
     ol {

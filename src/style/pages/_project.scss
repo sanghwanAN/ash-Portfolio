@@ -2,11 +2,12 @@
   small {
     position: relative;
     color: #9e879a;
-    font-weight: 300;
-    padding-left: 14px;
+    font-weight: none;
+    font-size: 13px;
+    padding-left: 11px;
     &:before {
       position: absolute;
-      top: -2px;
+      top: 1px;
       left: 0;
       content: "\022C7";
     }

@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useState } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import "@fontsource/noto-sans-kr"; 
 import "@fontsource/noto-sans-kr/300.css"; 
@@ -7,7 +8,13 @@ import "@fontsource/noto-sans-kr/700.css";
 import "@fontsource/noto-sans-kr/900.css"; 
 
 import "../style/sanghwanpf.scss"
+
+
 const Layout = ({ pageClassName, pageTitle, children }) => {
+  const [isActive, setIsActive]  = useState(false);
+  const handleToggle = () => {
+    setIsActive(!isActive);
+  };
   const data = useStaticQuery(graphql`
   query {
     site {
@@ -31,12 +38,12 @@ const Layout = ({ pageClassName, pageTitle, children }) => {
           <nav className="header-nav">
             <ul className="header-nav__ul">
               <li className="header-nav__item">
-                <Link to="/about" className="nav-link-text">
+                <Link to="/about" className={`nav-link-text ${isActive ? "nav-link-text--active" : ""}`} onClick={handleToggle}>
                   About
                 </Link>
               </li>
               <li className="header-nav__item">
-                <Link to="/blog" className="nav-link-text">
+                <Link to="/blog" className={`nav-link-text ${isActive ? "nav-link-text--active" : ""}`} onClick={handleToggle}>
                   WorksBlog
                 </Link>
               </li>

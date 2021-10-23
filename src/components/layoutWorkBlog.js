@@ -35,7 +35,7 @@ const LayoutWorkBlog = ({ pageTitle, children }) => {
           </div>
         </div>
       </header>
-      <div className="container">
+      <div className="container container--project">
       
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
       {/* <header className="site-title">{data.site.siteMetadata.title}</header> */}

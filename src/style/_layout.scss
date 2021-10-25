@@ -71,6 +71,7 @@ header {
 .header-nav {
   .header-nav__ul {
     text-align: right;
+    margin-bottom: 0;
   }
   .header-nav__item:not(:first-child) {
     margin-left: 20px;;

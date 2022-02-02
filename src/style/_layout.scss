@@ -108,6 +108,9 @@ header + .container {
   word-break: keep-all;
   letter-spacing: -1px;
   font-weight: 900;
+  > span {
+    display: block;
+  }
 }
 .site-title {
   font-size: 3rem;

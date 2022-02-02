@@ -53,11 +53,10 @@ const Layout = ({ pageClassName, pageTitle, children }) => {
       {/* <header className="site-title">{data.site.siteMetadata.title}</header> */}
       <main className="container__main">
         <h2 className="container__tit">
-          {pageTitle.split("\n").map((txt) => (
-            <>
+          {pageTitle.split("\n").map((txt,index) => (
+            <span key={index}>
               {txt}
-              <br />
-            </>
+            </span>
           ))}
         </h2>
         {children}

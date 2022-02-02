@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Gnb from './gnb'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import "@fontsource/noto-sans-kr"; 
 import "@fontsource/noto-sans-kr/300.css"; 
@@ -31,7 +32,8 @@ const Layout = ({ pageClassName, pageTitle, children }) => {
         </div>
         <div className="header-right">
           <nav className="header-nav">
-            <ul className="header-nav__ul">
+            <Gnb/>
+            {/* <ul className="header-nav__ul">
               <li className="header-nav__item">
                 <Link to="/about" className="nav-link-text">
                   About
@@ -42,7 +44,7 @@ const Layout = ({ pageClassName, pageTitle, children }) => {
                   WorksBlog
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </nav>
         </div>
       </div>

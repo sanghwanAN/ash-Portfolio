@@ -3,19 +3,17 @@ import { Link } from 'gatsby'
 
 function  Gnb () {
 
-  const isActive = ({ isCurrent }) => {
-    return isCurrent ? { className: "active" } : {}
-  }
+
   
   return (
   <ul className="header-nav__ul">
     <li className="header-nav__item" key="01">
-      <Link to="/about" className="nav-link-text" getProps={isActive}  activeStyle={{ color: "tomato" }} >
+      <Link to="/about" className="nav-link-text" activeStyle={{ color: "tomato" }} >
         About
       </Link>
     </li>
     <li className="header-nav__item"  key="02">
-      <Link to="/blog" className="nav-link-text" getProps={isActive}  activeStyle={{ color: "tomato" }} >
+      <Link to="/blog" className="nav-link-text" activeStyle={{ color: "tomato" }} >
         WorksBlog
       </Link>
     </li>
